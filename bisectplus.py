@@ -104,14 +104,14 @@ class bisectplus(Operator):
         for vertex in obj.data.vertices:
             pos = mat@vertex.co
             distance = mathutils.geometry.distance_point_to_plane(pos, origin, normal)
-            if distance > 0.01:
+            if distance > 0.0001:
                 indexarrayA.append(vertex.index)
         
         indexarrayB = []
         for vertex in obj.data.vertices:
             pos = mat@vertex.co
             distance = mathutils.geometry.distance_point_to_plane(pos, origin, normal)
-            if distance < 0.01:
+            if distance < 0.0001:
                 indexarrayB.append(vertex.index)
 
         bpy.ops.object.mode_set(mode='OBJECT')
