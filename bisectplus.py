@@ -202,7 +202,7 @@ class OBJECTSELECTION_Panel(Panel):
     bl_label = 'Bisect Plus'
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
-    bl_category = 'Create'
+    bl_category = 'Bisectplus'
     bl_options = {"DEFAULT_CLOSED"}
 
     def draw(self, context):
