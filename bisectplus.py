@@ -220,7 +220,6 @@ class OBJECTSELECTION_Panel(Panel):
         box1 = box.box()
         box1.label(text=obj.name,icon='OBJECT_DATAMODE')
 
-        cell_props = context.window_manager.objectselection_props
         cplabeltxt = "Select a cutting plane:"
         if cell_props.cuttingplane:
             cplabeltxt = "Selected cutting plane:"
